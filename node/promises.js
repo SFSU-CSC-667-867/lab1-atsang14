@@ -5,6 +5,10 @@ const promiseExample = () => {
 };
 
 promiseExample()
-  .then((res) => console.log(res));
+  .then((res) => res + 'World')
+  .catch((e) => console.log(e))
+  .then((res) => console.log(res))
+  .catch((e) => console.log(e));
+// try catch but asynchronus
 
 console.log('hi');
