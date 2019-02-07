@@ -46,3 +46,5 @@ console.log(testVar);
 
 // change a property
 
+testVar.a = 'z';
+console.log(testVar);
