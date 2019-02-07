@@ -21,6 +21,28 @@ obj.a = 9;
 
 // declare an object with an object as a property
 
+// testVar cannot change but object inside object can change because it's a reference
+// ex: testVar = 'as' // is an error
+// testVar.a = 'p'; // works 
+// constant object
+
+const testVar = {
+    y : {
+        a: 'Hello',
+    }
+}
+
+console.log(testVar);
+
+
 // delete a property
 
+delete testVar.y;
+console.log(testVar);
+
+testVar.a = 'p';
+console.log(testVar);
+
+
 // change a property
+
