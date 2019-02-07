@@ -1,4 +1,5 @@
 // Declaring with the function keyword
+// avoid because function hoisting
 function hi() {
   console.log('Say Hello');
 }
@@ -10,9 +11,10 @@ const arrow = (test) => {
   console.log(test);
 }
 
-arrow('hi')
+arrow('hi');
 
 // for practice
+
 
 // make an arrow function with no block body
 
